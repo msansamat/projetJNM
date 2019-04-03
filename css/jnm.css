@@ -444,21 +444,21 @@ section {
 }
 
 .img_float_left {
-	float:left;
 	max-width: 100%;
 	max-height: 100%;
 }
 
 .img_float_right {
-	float:right;
 	max-width: 100%;
 	max-height: 100%;
 }
 
 .mot_dir{
 	text-align: justify;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 
@@ -692,9 +692,24 @@ section {
   display: block;
 }
 
+#deroulement-section .about-thumb {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 100px;
+  position: relative;
+}
+
+#deroulement-section .about-img img {
+  border: 8px solid #ffffff;
+  position: absolute;
+  left: -120px;
+  bottom: -325px;
+  padding: 12px;
+}
+
 #deroulement-section .team-thumb {
   width: 100%;
-  height: 450px;
+  height: 400px;
   margin: 32px 0;
   text-align: center;
   background: #ffffff;
@@ -705,10 +720,9 @@ section {
 
 #deroulement-section .team-thumb .image-holder {
   position: relative;
-  top: 10px;
-  width: 350px;
+  top: 40px;
   display: inline-block;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   padding: 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -757,6 +771,12 @@ section {
 #deroulement-section .team-thumb:hover p.description {
   color: #ffffff;
 }
+
+#deroulement-section .team-thumb:hover h2.heading {
+  color: #e44c65;
+}
+
+
 
 
 /* Footer */
@@ -828,6 +848,12 @@ footer .social-footer li a {
 
 footer .social-footer li:hover a {
 	color: #00a8ff;
+}
+
+.footbar{
+	width: 30px;
+	height: 30px;
+	border-radius: 10px ;
 }
 
 
