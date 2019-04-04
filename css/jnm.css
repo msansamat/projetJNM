@@ -7,6 +7,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+section {
+	background-color: transparent;
+	background-image: url('../img/back.png') !important;
+}
 
 .overlay {
   width: 100%;
