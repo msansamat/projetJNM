@@ -7,6 +7,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 section {
 	background-color: transparent;
 	background-image: url('../img/back.png') !important;
@@ -132,7 +133,6 @@ header {
 	width: 100%;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url('../img/header.jpg');
 	background-size: cover;
 }
 
@@ -500,7 +500,7 @@ section {
 }
 
 .soutien .icon-holder > img.icon {
-	width: 40px;
+	width: 80px;
 }
 
 .soutien:hover {
@@ -778,6 +778,96 @@ section {
 
 #deroulement-section .team-thumb:hover h2.heading {
   color: #e44c65;
+}
+
+
+/* Bannière chiffres */
+
+.mu-abtus-counter-section {
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+	margin-top: -180px;
+}
+
+.banniere {
+	background-image: url('../img/banniere.png');
+	background-size: 100%;
+	height: 200px;
+	padding-top: 15px;
+	position: relative;
+}
+
+.mu-abtus-counter-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.mu-abtus-counter-area .mu-abtus-counter-single {
+  border-right: 2px solid #fff;
+	border-right-width: medium;:
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding-left: 0px;
+}
+.mu-abtus-counter-area .mu-abtus-counter-single span {
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+	vertical-align: middle;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	align-items: center;
+}
+.mu-abtus-counter-area .mu-abtus-counter-single h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+.mu-abtus-counter-area .mu-abtus-counter-single p {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+	vertical-align: middle;
+	margin: 0;
+	text-align: center;
+
+}
+.mu-abtus-counter-area .no-border {
+  border: none;
+}
+
+@media (max-width: 991px){
+	.mu-abtus-counter-section {
+	background-size: 100% 100%;
+	padding: 60px 0;
+}
+	.mu-abtus-counter-section .mu-abtus-counter-area .mu-abtus-counter-single span {
+	font-size: 40px;
+}
+
+	.mu-abtus-counter-section .mu-abtus-counter-area .mu-abtus-counter-single h4 {
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+	@media (max-width: 767px) {
+		.mu-abtus-counter-section {
+			background-position: center center;
+			background-size: cover;
+		}
+
+		.mu-abtus-counter-section .mu-abtus-counter-area .mu-abtus-counter-single {
+			border: medium none;
+			margin-bottom: 25px;
+		}
+	}
 }
 
 
