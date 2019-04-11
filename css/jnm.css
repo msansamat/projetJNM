@@ -62,6 +62,7 @@ section {
 /* Typography */
 
 p {
+	text-align: justify;
 	font-size: 18px;
 	line-height: 1.5;
 	color: #8a8e91;
@@ -805,7 +806,7 @@ section {
   width: 100%;
 }
 .mu-abtus-counter-area .mu-abtus-counter-single {
-  border-right: 2px solid #fff;
+  border-right: 2px solid #333;
 	border-right-width: medium;:
   display: inline;
   float: left;
@@ -814,7 +815,7 @@ section {
   padding-left: 0px;
 }
 .mu-abtus-counter-area .mu-abtus-counter-single span {
-  color: #fff;
+  color: #333;
   display: inline-block;
   font-size: 50px;
 	vertical-align: middle;
@@ -823,7 +824,7 @@ section {
 	align-items: center;
 }
 .mu-abtus-counter-area .mu-abtus-counter-single h4 {
-  color: #fff;
+  color: #333;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -831,7 +832,7 @@ section {
 	text-align: center;
 }
 .mu-abtus-counter-area .mu-abtus-counter-single p {
-  color: #fff;
+  color: #333;
   font-size: 18px;
   text-transform: uppercase;
 	vertical-align: middle;
@@ -877,7 +878,7 @@ section {
 
 footer {
 	padding: 140px 0 40px;
-	background: url('../img/footer.jpg');
+	background: rgba(28, 36, 65, 0.93);
 	-webkit-background-size: cover;
 	background-size: cover;
 }
