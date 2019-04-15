@@ -11,6 +11,7 @@ body {
 section {
 	background-color: transparent;
 	background-image: url('../img/back.png') !important;
+	color : #000000;
 }
 
 .overlay {
@@ -65,7 +66,6 @@ p {
 	text-align: justify;
 	font-size: 18px;
 	line-height: 1.5;
-	color: #8a8e91;
 }
 
 h1,
