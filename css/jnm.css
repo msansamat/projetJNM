@@ -24,19 +24,8 @@ section {
   bottom: 0;
 }
 
-.parallax {
-	position: absolute;
-	overflow: hidden;
-	width: 100%;
-	-webkit-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	transform: translateZ(0);
-}
 
-.parallax img {
-	width: 100%;
-	height: 100%;
-}
+
 /* Preloader */
 
 .preloader {
@@ -126,16 +115,44 @@ ul.white-list li:before {
 }
 
 
+.tittle {
+	color: #3a3a3a;
+	font-size: 40px;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+.tittle-line {
+	background-color: #898989;
+	display: inline-block;
+	height: 3px;
+	margin-bottom: 10px;
+	width: 60px;
+}
+
+.hr {
+	display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.hr::before, .hr::after {
+    content: "";
+    flex: 1;
+    margin: 5% 5%;
+    border-bottom: 1px solid #000;
+	height: 0;
+	color: #aaa;
+}
+
+
 
 /* header avec particle */
 
 header {
 	position: relative;
 	width: 100%;
-	height: 100%;
 	color: white;
-	background-image: url("../img/banniere.webp");
-	/*background: rgba(28, 36, 65, 0.93);*/
+	background: url("../img/banniere.webp");
 	background-size: cover;
 }
 
@@ -301,98 +318,12 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	position: relative;
 	z-index: 1;
 }
-/* Sections */
+/* Sections standardisée */
 section {
 	position: relative;
+	padding-top: 30px;
 }
 
-.section {
-	padding: 40px 0;
-	background: #fff;
-}
-
-.section-padded {
-	padding: 140px 0 40px;
-}
-
-
-.cut-top {
-	content: ' ';
-	position: absolute;
-	z-index: 1;
-	top: -80px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 80px solid transparent;
-	border-right: 30px solid white;
-}
-
-.cut-bottom {
-	content: ' ';
-	position: absolute;
-	z-index: 1;
-	bottom: -80px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-bottom: 80px solid transparent;
-	border-left: 30px solid white;
-}
-
-
-
-.owl-schedule .schedule-row:not(:last-child) {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.owl-testimonials .author {
-	margin-top: 50px;
-}
-
-.ripple-effect {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: white;
-	-webkit-animation: ripple-animation 2s;
-	animation: ripple-animation 2s;
-}
-
-@-webkit-keyframes ripple-animation {
-	from {
-		opacity: 0.2;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	to {
-		opacity: 0;
-		-webkit-transform: scale(100);
-		transform: scale(100);
-	}
-}
-
-@keyframes ripple-animation {
-	from {
-		opacity: 0.2;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	to {
-		opacity: 0;
-		-webkit-transform: scale(100);
-		transform: scale(100);
-	}
-}
-
-
-
-.owl-twitter i.icon {
-	font-size: 36px;
-	margin-bottom: 60px;
-	color: white;
-}
 
 /* ////// Ensemble des sections ////// */
 
@@ -400,28 +331,6 @@ section {
 /* Section présentation */
 
 
-
-.title-area {
-	display: inline;
-	float: left;
-	padding: 0 100px;
-	position: relative;
-	text-align: justify;
-	width: 100%;
-}
-.tittle {
-	color: #3a3a3a;
-	font-size: 40px;
-	margin-bottom: 0;
-	padding-bottom: 10px;
-}
-.tittle-line {
-	background-color: #898989;
-	display: inline-block;
-	height: 3px;
-	margin-bottom: 10px;
-	width: 60px;
-}
 
 .imgRight img {
 	max-width: 100%;
@@ -435,44 +344,14 @@ section {
 
 /* Section mot du directeur */
 
-.hr {
-	display: flex;
-    align-items: center;
-    margin: 1em 0;
-}
 
-.hr::before, .hr::after {
-    content: "";
-    flex: 1;
-    margin: 5% 5%;
-    border-bottom: 1px solid #000;
-	height: 0;
-	color: #aaa;
-}
-
-.img_float_left {
+.img_float  {
 	max-width: 100%;
 	max-height: 100%;
-}
-
-.img_float_right {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.mot_dir{
-	text-align: justify;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
 }
 
 
 /* Section ils nous soutiennent */
-.soutiens {
-	margin: 40px 0;
-}
 
 .soutien {
 	width: 100%;
@@ -495,17 +374,12 @@ section {
 	transition: all 0.3s ease;
 }
 
-.soutien .heading {
-	position: relative;
-	top: 80px;
-	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
 
 .soutien .icon-holder > img.icon {
 	width: 80px;
 }
 
+/*Permet de détermoner la couleur des bordures des boxes*/;
 .soutien:hover {
 	border-color: #00a8ff;
 }
@@ -546,11 +420,9 @@ section {
 
 /* Section concours */
 
-.concours {
-	margin: 40px 0;
+.concour {
+	margin: 20px 0;
 }
-
-
 
 
 .portfolio .categories-grid span {
@@ -690,9 +562,6 @@ section {
 
 /* Section déroulement */
 
-#deroulement-section {
-  background: #f0f0f0;
-}
 
 #deroulement-section .item {
   width: 100%;
@@ -795,7 +664,6 @@ section {
 }
 
 .banniere {
-	/*background-image: url('../img/banniere.png');*/
 	background-size: 100%;
 	height: 200px;
 	padding-top: 15px;
