@@ -11,6 +11,7 @@ body {
 section {
 	background-color: transparent;     
 	background-image: url('../img/back.webp') !important;
+	  background-attachment: fixed;
 	color : #000000;
 }
 
@@ -226,7 +227,7 @@ nav.navbar .navbar-nav li.active a:not(.btn) {
 nav.navbar-fixed-top {
 	z-index: 9499;
 	top: 0;
-	padding: 25px 0;
+	padding: 2% 0;
 	opacity: 0;
 	background: white;
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
@@ -240,6 +241,45 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	background: #bbb;
 }
 /* //////////////////.   Buttons ///////////////////// */
+
+
+/* Scroll to top bouton */
+
+#myBtn {
+  bottom: 60px;
+  color: #fff;
+  display: none;
+  font-size: 23px;
+  height: 50px;
+  line-height: 45px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 50px;
+  z-index: 999;
+}
+
+#myBtn:hover,
+#myBtn:focus {
+  background-color: #FFF;
+  text-decoration: none;
+  outline: none;
+}
+#myBtn {
+  background-color: #59abe3;
+  border: 2px solid #59abe3;
+}
+
+#myBtn:hover,
+#myBtn:focus {
+  color: #59abe3;
+}
 
 .btn {
 	font-size: 18px;
@@ -346,9 +386,138 @@ section {
 /* Section mot du directeur */
 
 
-.img_float  {
-	max-width: 100%;
-	max-height: 100%;
+#mot-dir-section {
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+#mot-dir-section:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#mot-dir-section .md-frame {
+  display: inline;
+  float: left;
+  padding: 0 150px;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+#mot-dir-section .md-frame .mu-testimonial-content {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item {
+  display: inline;
+  float: left;
+  width: 100%;
+  outline: none;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote {
+  background-color: #333;
+  border-radius: 4px;
+  display: inline;
+  float: left;
+  padding: 60px 30px;
+  width: 100%;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote {
+  border: none;
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:before {
+  content: '\f10d';
+  color: #fff;
+  font-family: fontAwesome;
+  font-style: italic;
+  left: 2%;
+  position: absolute;
+  top: 0;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote p {
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-img {
+  display: inline;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-img img {
+  background-color: #555;
+  border: 1px solid #888;
+  border-radius: 50%;
+  margin: -50px auto 5px;
+  padding: 0;
+  width: 120px;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info {
+  display: inline;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info span {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .slick-dots li {
+  background-color: #fff;
+  height: 8px;
+  width: 20px;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .slick-dots li button {
+  display: none;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info span {
+  color: #01bafd;
+}
+#mot-dir-section .md-frame .mu-testimonial-content .slick-dots .slick-active {
+  background-color: #01bafd;
+}
+
+
+/* responsive  */
+
+
+@media (max-width: 991px) {
+
+  #mot-dir-section .md-frame {
+    padding: 0 20px;
+  }
+
+  #mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote {
+    padding: 60px 15px;
+  }
+
+  #mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote::before {
+    left: 0;
+  }
+  
+  #mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote {
+    padding: 40px 15px 80px;
+  }
+
 }
 
 

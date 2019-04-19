@@ -34,6 +34,8 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
 	<!-- Elegant Icons -->
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+		<!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"> 
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/jnm.css">
 </head>
@@ -63,7 +65,7 @@
 						<li><a href="#presentation-section">Présentation</a></li>
 						<li><a href="#deroulement-section">Déroulement</a></li>
 						<li><a href="#concours-section">Actualités</a></li>
-						<li><a href="#motDirecteur-section">Mot de la direction</a></li>
+						<li><a href="#mot-dir-section">Mot de la direction</a></li>
 						<li><a href="#soutien-section">Nos soutiens</a></li>
 					</ul>
 				</div>
@@ -87,6 +89,9 @@
 		</header>
 
 		<!--  Mettre votre code ici dans des balises section-->
+
+	<!--  Bouton renvoi haut de page -->
+	<button href="#back-top" id = "myBtn" class="go-top"> <i class="fa fa-angle-double-up"></i></button>
 
 	<!--  Section présentation"-->
 
@@ -264,9 +269,8 @@
 
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
-				<a>Téléchargez le programme en PDF :</a>
-						<a href="https://livresnumeriquesgratuits.com/data/documents/Cours-de-comptabilite-generale.pdf"><img class="logopdf" src="img\pdf.jpg" />
-						</a>
+				<button type="button" class="btn btn-link"><a href="https://livresnumeriquesgratuits.com/data/documents/Cours-de-comptabilite-generale.pdf">Téléchargez le programme en PDF</a>
+				</button>
 			</div>
 		</div>
 	</section>
@@ -406,7 +410,7 @@
 
 
 	<!--  Section Mot du directeur-->
-	<section id="motDirecteur-section" class="section section-padded">
+	<section id="mot-dir-section" class="section section-padded">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -414,28 +418,61 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-12 col-xs-12">
-					<div class="img_float_left">
-	 					<img src="img/team/chat.webp" alt="Nouveau !" class="img-responsive" />
-					</div>
-				</div>
-				<div class="col-md-8 col-sm-12 col-xs-12">
-					<p class="mot_dir">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat dui a auctor elementum. Proin ex turpis, condimentum pulvinar velit suscipit, imperdiet hendrerit felis. Integer at consectetur nulla, sit amet lobortis sapien. Nulla lectus est, efficitur id elementum vel, lacinia quis arcu. Aliquam risus nisi, aliquam sit amet neque nec, bibendum dictum mauris. Proin accumsan sagittis odio quis commodo. Aliquam fringilla odio in eleifend feugiat. Curabitur euismod at augue vitae tincidunt. Nullam tincidunt nunc at augue tempus consectetur vel sed mauris. Nam vehicula suscipit sem sed bibendum. Maecenas mauris elit, lacinia vel risus vel, porta tincidunt arcu. Aenean suscipit euismod pretium. Ut ultricies, justo eget efficitur aliquam, ante arcu ultrices tortor, in sollicitudin nunc libero nec purus.
-					</p>
-				</div>		
-			</div>
-			<div class="row">
-			<div class="col-md-8 col-sm-12 col-xs-12">
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat dui a auctor elementum. Proin ex turpis, condimentum pulvinar velit suscipit, imperdiet hendrerit felis. Integer at consectetur nulla, sit amet lobortis sapien. Nulla lectus est, efficitur id elementum vel, lacinia quis arcu. Aliquam risus nisi, aliquam sit amet neque nec, bibendum dictum mauris. Proin accumsan sagittis odio quis commodo. Aliquam fringilla odio in eleifend feugiat. Curabitur euismod at augue vitae tincidunt. Nullam tincidunt nunc at augue tempus consectetur vel sed mauris. Nam vehicula suscipit sem sed bibendum. Maecenas mauris elit, lacinia vel risus vel, porta tincidunt arcu. Aenean suscipit euismod pretium. Ut ultricies, justo eget efficitur aliquam, ante arcu ultrices tortor, in sollicitudin nunc libero nec purus.
-				</p>
-			</div>
-				<div class="col-md-4 col-sm-12 col-xs-12">
-					<div class="img_float_right">
-	 					<img src="img/team/chat.webp" alt="Nouveau !" class="img-responsive" />
-					</div>
-				</div>			
+				 <div class="col-md-12">
+          <div class="md-frame">
+            <div id="mu-testimonial-slide" class="mu-testimonial-content">
+              <!-- premier item carousel -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>Commentaire de Mme Hamet dans cette partie du Caroussel </p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="img/team-img3.jpg" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Joanne Hamet</h4>
+                  <span>Grade</span>
+                </div>
+              </div>
+              <!-- fin item -->
+              <!-- second item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>Commentaire de M. Nicolas dans cette partie du Caroussel</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="img/team-img3.jpg" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Henri Nicolas</h4>
+                  <span>Grade</span>
+                </div>
+              </div>
+              <!-- fin second item -->
+              <!-- troisième item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque id.</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="img/team-img3.jpg" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>John Snow</h4>
+                  <span>Happy Student</span>
+                </div>
+              </div>
+              <!-- fin troisième -->
+            </div>
+          </div>
+        </div>
+				
 			</div>
 		</div>
 	</section>
@@ -605,6 +642,8 @@
 	<script src="js/jquery.onepagenav.js"></script> <!-- Permet le scroll doux -->
 	<script src="js/main.js"></script> <!-- Notre Js perso -->
 	<script src="js/waypoints.js"></script> <!-- Baniere de chifres -->
+
+		<script type="text/javascript" src="js/slick.js"></script> <!-- Mot directeur -->
 </body>
 
 </html>
