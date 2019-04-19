@@ -219,7 +219,6 @@ a {
 
 nav.navbar {
 	position: fixed;
-	z-index: 9500;
 	width: 100%;
 	width: 100vw;
 	-webkit-transition: all 0.3s ease;
