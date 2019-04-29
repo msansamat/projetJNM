@@ -36,7 +36,7 @@ jQuery(function($) {
 		$('.mobile-nav ul').html($('nav .navbar-nav').html());
 		$('nav.navbar-fixed-top .navbar-brand img').attr('src', $('nav.navbar-fixed-top .navbar-brand img').data("active-url"));
 
-		// TypeWriter réglages initiaux
+		// TypeWriter réglages initiaux 
 		$(".typed").typewriter({
 			speed: 60
 		});
@@ -302,6 +302,9 @@ $(document).ready(function() {
   $(document).ready(function() {
       $("#team-carousel").owlCarousel({
           items : 3,
+          autoplay:true,
+          autoplayTimeout:1000,
+          autoplayHoverPause:true,
           itemsDesktop : [1199,3],
           itemsDesktopSmall : [979,3],
           slideSpeed: 300,
@@ -309,6 +312,7 @@ $(document).ready(function() {
           itemsTablet: [768,1],
           itemsTabletSmall: [985,2],
           itemsMobile : [479,1],
+
       });
     });
     
@@ -402,13 +406,45 @@ $(document).ready(function() {
 })( jQuery );
 
 
-
 jQuery(function($){
       jQuery('.counter').counterUp({
         delay: 3,
         time: 1000
     });
 });
+
+    /* Back to Top
+    -----------------------------------------------*/
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 200) {
+          $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+           }
+        });   
+          // Animate the scroll to top
+        $('.go-top').click(function(event) {
+          event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 300);
+    });
+
+
+jQuery(function($){
+    jQuery('#mu-testimonial-slide').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      autoplay: true,          
+      cssEase: 'linear'
+    });
+
+});
+
+
+
+
+
 
 
 
