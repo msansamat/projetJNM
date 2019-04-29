@@ -219,7 +219,6 @@ a {
 
 nav.navbar {
 	position: fixed;
-	z-index: 9500;
 	width: 100%;
 	width: 100vw;
 	-webkit-transition: all 0.3s ease;
@@ -982,4 +981,75 @@ footer .social-footer li:hover a {
 .header{
 	padding-bottom: 0px !important; 
 }
+
+/* *********************************************************** PAGE OFFRE EMPLOI *************************************************************************************** */
+
+@charset "utf-8";
+
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
+
+*, *::before, *::after{box-sizing:border-box;}
+a{outline:none; text-decoration:none;}
+img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+
+/* Fonts
+--------------------------------------------------------------------------------------------------------------- */
+body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
+h7,  .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+
+/* Generalise
+--------------------------------------------------------------------------------------------------------------- */
+ h7, .heading{margin:0 0 20px 0; font-size:22px; line-height:normal; font-weight:normal; text-transform:uppercase;}
+.hoc{display:block; margin:0 auto;}
+
+/* Grid
+--------------------------------------------------------------------------------------------------------------- */
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 3.06748466257669%; list-style:none;}
+.first{margin-left:0; clear:left;}
+.one_quarter{width:22.69938650306748%;}
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container_work{padding:1% 0;}
+.elements article .txtwrap{padding:20px; border-bottom:1px solid;}
+.elements article .txtwrap .heading{margin:0; font-size:1.2rem;}
+.elements article .txtwrap .meta{}
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+g:active, g:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+input:focus, textarea:focus, *:required:focus{border-color:#AE1E04;}
+
+/* Content Area */
+.elements article figure figcaption{color:#FFFFFF;}
+.elements article figure figcaption time strong{background-color:#AE1E04;}
+.elements article figure figcaption time em{background-color:#821603;}
+.elements article .txtwrap{color:#474747; background-color:#F1F0ED;}
+.elements article:hover .txtwrap{border-color:#AE1E04;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+}
+
+
+@media screen and (max-width:750px){
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	.elements article{max-width:320px;}
+}
+
+
 
