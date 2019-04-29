@@ -473,7 +473,7 @@ section {
   text-align: center;
 }
 #mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info h4 {
-  color: #fff;
+  color: #24637E
   font-size: 20px;
   margin-bottom: 0px;
 }
@@ -818,7 +818,7 @@ section {
   color: #ffffff;
 }
 
-#deroulement-section .team-thumb:hover h2.heading {
+#deroulement-section .team-thumb:hover h3.heading {
   color: #e44c65;
 }
 
