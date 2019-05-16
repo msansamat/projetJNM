@@ -37,12 +37,7 @@ jQuery(function($) {
 		$('nav.navbar-fixed-top .navbar-brand img').attr('src', $('nav.navbar-fixed-top .navbar-brand img').data("active-url"));
 
 			// Réglage vitesse du scroll
-		$('.navbar.navbar-fixed-top .navbar-nav').onePageNav({
-			currentClass: 'active',
-			changeHash: false,
-			scrollSpeed: 400,
-			filter: ':not(.btn)'
-		});
+
 	});
 
 	// Adaptation taille header
@@ -78,7 +73,40 @@ jQuery(function($) {
 		$('.mobile-nav').removeClass('active');
 		event.preventDefault();
 	});
+	
+	
 
 
 
 });
+	    $(window).load(function() {
+        var $container = $('.portfolio-items');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        $('.cat a').click(function() {
+            $('.cat .active').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+
+    });
+	
+    $('.portfolio-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });

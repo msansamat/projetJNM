@@ -301,20 +301,48 @@ $(document).ready(function() {
   -----------------------------------------------*/
   $(document).ready(function() {
       $("#team-carousel").owlCarousel({
-          items : 3,
           autoplay:true,
-          autoplayTimeout:1000,
+          autoplayTimeout:2000,
+          loop : true,
           autoplayHoverPause:true,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3],
-          slideSpeed: 300,
-          itemsDesktop : [1199,2],
-          itemsTablet: [768,1],
-          itemsTabletSmall: [985,2],
-          itemsMobile : [479,1],
+          slideSpeed: 1,
+          margin:10,
+          nav : true,
+          navText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+          responsiveClass:true,
+          responsive:{
+                0:{
+                  items:1,
+              },
+              480:{
+                  items:1,
+              },
+              850:{
+                  items:2,
+              },
+              1199:{
+                  items:3,
+              }
+          },
 
       });
     });
+
+
+
+    $(document).ready(function() {
+      $("#motDir").owlCarousel({
+          items : 1,
+          autoplay:true,
+          autoplayTimeout:2000,
+          loop : true,
+          nav : true,
+          navText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+          autoplayHoverPause:true,
+
+      });
+    });
+    
     
 
 
@@ -429,17 +457,6 @@ jQuery(function($){
     });
 
 
-jQuery(function($){
-    jQuery('#mu-testimonial-slide').slick({
-      dots: true,
-      infinite: true,
-      arrows: false,
-      speed: 500,
-      autoplay: true,          
-      cssEase: 'linear'
-    });
-
-});
 
 
 
