@@ -462,7 +462,6 @@ section {
   vertical-align: middle;
   text-align: center;
 }
-<<<<<<< HEAD
 .mu-abtus-counter-area .mu-abtus-counter-single p {
   color: #333;
   font-size: 18px;
@@ -471,12 +470,6 @@ section {
   margin: 0;
   text-align: center;
 
-=======
-#mot-dir-section .md-frame .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info h4 {
-  color: #24637E
-  font-size: 20px;
-  margin-bottom: 0px;
->>>>>>> b6795f14000b18864d69feb08f2cf82eada71af6
 }
 .mu-abtus-counter-area .no-border {
   border: none;
@@ -829,15 +822,10 @@ section {
   /* margin-bottom: 70px; */
 }
 
-<<<<<<< HEAD
 .feature-center:hover img, .feature-center:focus img {
   text-align: center;
   margin-left: auto;
     margin-right: auto;
-=======
-#deroulement-section .team-thumb:hover h3.heading {
-  color: #e44c65;
->>>>>>> b6795f14000b18864d69feb08f2cf82eada71af6
 }
 .feature-center img {
   text-align: center;
