@@ -14,7 +14,20 @@ section {
 	  background-attachment: fixed;
 	color : #000000;
 }
-
+section1{
+  width: 100%;
+  height: 100%;
+  background-color: #151515;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 804px;
+  position: relative;
+}
 .overlay {
   width: 100%;
   height: 100vh;
@@ -189,7 +202,7 @@ header .typed-cursor {
 	font-size: 60px;
 	display: inline-block;
 	margin: 0 10px;
-	color: #24637E;
+	color: #fff;
 	-webkit-animation-name: flash;
 	animation-name: flash;
 	-webkit-animation-duration: 1s;
@@ -240,6 +253,10 @@ nav.navbar-fixed-top {
 nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: #bbb;
 }
+nav.navbar-fixed-top img{	
+	margin-top:10px;
+}
+
 
 .icon-bar {
 	background: #bbb;
@@ -415,6 +432,8 @@ section {
 
 
 /* Bannière chiffres */
+
+
 
 .mu-abtus-counter-section {
   display: inline;
@@ -609,12 +628,15 @@ section {
   color: #e44c65;
 }
 
-.logopdf{ width: 50px;
-	height: 50px; 
-	border-radius: 10px ;
+
+#deroulement-section .imgcircle {
+	display: inline-block;
+	overflow:hidden;
+    border-radius:50%;
+	height: 170px;
+	width: 170px;
+
 }
-
-
 /* MIAGE en Actus (concours)*/
 
 .concour {
@@ -731,6 +753,10 @@ section {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+}
+.portfolio_item .containerimg{
+	height: 320px;
+	width: 100%;
 }
 
 .portfolio .categories-grid .categories ul li {
@@ -1001,9 +1027,73 @@ section {
   margin-right: 5%;
   margin-left: 5%;
 }
+/*Informations pratiques */
+/* #informations-pratiques .container { */
+	/* width: 100%; */
+	/* display: block; */
+	/* background: #a0a4aa; */
+	/* border-radius: 40px; */
+/* } */
 
+/* #informations-pratiques .container:hover{ */
+	/* background: #d1d5dc; */
+/* } */
 
+/* #informations-pratiques .row{ */
+	/* margin: 1%; */
+	/* text-align: center; */
+/* } */
 
+/* #informations-pratiques a{ */
+	/* color: #d7dee8; */
+/* } */
+
+/* #informations-pratiques .row h5{ */
+/* color: #fff; */
+/* } */
+/* Informations pratiques */
+.collapsible {
+  background-color: #0B2161;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.actived, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.actived:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  /* max-height:200px; */
+  /* max-width:200px; */
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.content p {
+	margin-top:8px;
+	margin-bottom:8px;
+	max-height: 400px
+}
 /* Footer */
 
 footer {
@@ -1077,7 +1167,10 @@ footer .social-footer li:hover a {
 footer .text-center-mobile a{
   font-size: 20px;
 }
-
+.partenaires {
+	max-width: 80px;
+	max-height: 50px;
+}
 .footbar{
 	width: 30px;
 	height: 30px;

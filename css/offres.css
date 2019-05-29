@@ -193,7 +193,8 @@ ol.type li a:hover {
     /* left: -500px; */
     /* opacity: 0; */
     right: 0;
-    /* width: 100%; */
+	height:100%;
+    width: 100%;
     /* top: 0; */
     /* background-color: #111; */
     /* text-decoration: none !important; */
@@ -215,7 +216,7 @@ ol.type li a:hover {
     background: -webkit-linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
 	padding: 30% 0 0 0;
 	height: 100%;
-	width: 90%;
+	width: 88%;
 	opacity: 0;
 	transition: all 0.5s;
 }
@@ -234,6 +235,14 @@ ol.type li a:hover {
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
+	margin-top:0;
+}
+.hover-bg:hover .hover-text>h4>i {
+	color: #fff;
+}
+.hover-bg:hover .hover-text>h4>a {
+	color: #fff;
+	margin-top:30px;
 }
 .hover-bg .hover-text>i {
 	opacity: 0;
@@ -410,7 +419,7 @@ ul.white-list li:before {
 .little_img{
 	width: 230px;
 	height: 200px ;
-	margin-bottom: 5%;
+	margin-bottom: 0;
 }
 
 .center_img{
@@ -466,6 +475,9 @@ nav.navbar-fixed-top {
 	padding-top: 25px 0;
 	background: white;
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
+}
+nav.navbar-fixed-top img{	
+	margin-top:10px;
 }
 
 nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
@@ -1169,7 +1181,10 @@ footer .social-footer li:hover a {
 	height: 30px;
 	border-radius: 10px ;
 }
-
+.partenaires {
+	max-width: 80px;
+	max-height: 50px;
+}
 
 
 
